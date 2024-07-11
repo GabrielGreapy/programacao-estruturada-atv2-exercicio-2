@@ -33,4 +33,14 @@ def q2():
     print(soma)
 def q3():
     media = 0
-    for i in
+    nota = 0
+    divisor = 0
+    cont = 0
+    while nota != -1:
+        nota == float(input("Nota"))
+        divisor += 1
+        cont += nota
+        if nota == -1:
+            break
+    media = cont // divisor
+q3()
