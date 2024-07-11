@@ -4,14 +4,33 @@ def q1():
     quantidade de divisores de um
     número (incluindo 1 e o próprio 
     número) que são divisíveis por 3.
+    Parte 1 - programa que mostra os divisores de um numero
     """
-    numero = int(input(""))
-    quantidade_divisores = 0
-    for i in range(2, numero+1):
-        if numero % i == 0 and i % 3 == 0:
-            quantidade_divisores += 1
-    if quantidade_divisores == 0:
-        print("O número não possui divisores multiplos de 3")
-    else:
-        print(
-            f"Quantidade de divisores divisiveis por 3: {quantidade_divisores}")
+    contador = 0
+    numero = int(input("Digite um numero: "))
+    # os divisiores deste numero
+    for i in range(1,numero + 1):
+        if (numero % i == 0):
+            print(i)
+            if (i % 3 == 0):
+                contador += 1
+            
+    '''
+    Parte 2 - Com os numeros divisores verificar se são divisiveis por 3 incrementa o contador
+    '''
+    print(f'Na lista de divisiveis deste numero há {contador} numeros divisiveis por 3.')
+# q1()
+def q2():
+    numero1 = int(input("Digite um numero: "))
+    numero2 = int(input("Digite um numero: "))
+    soma = 0
+    if numero1 > numero2:
+        n1 = numero2
+        n2 = numero1
+    for i in range(n1, n2 + 1):
+        if i < 0:
+            soma += i
+    print(soma)
+def q3():
+    media = 0
+    for i in
